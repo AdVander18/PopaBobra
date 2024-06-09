@@ -6,6 +6,7 @@ using System.IO;
 using System.Reflection.Emit;
 using System.Windows.Forms;
 using СтраныЕвропы.Events;
+using СтраныЕвропы.Queries;
 
 namespace СтраныЕвропы
 {
@@ -88,20 +89,13 @@ namespace СтраныЕвропы
             countries.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Admin_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();
-            string queryString = $"select id_user, is_admin from register WHERE id_user = {_userId}";  // запрашиваем данные о пользователе с id = _userId
-            SqlCommand command = new SqlCommand(queryString, dataBase.GetConnection());
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-            var user = new checkUser(table.Rows[0].ItemArray[1].ToString(), Convert.ToBoolean(table.Rows[0].ItemArray[1]));
-            Economy.Economy countries = new Economy.Economy(user);
-            countries.ShowDialog();
+            Administration administration = new Administration();
+            administration.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Events_Click(object sender, EventArgs e)
         {
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
@@ -114,10 +108,41 @@ namespace СтраныЕвропы
             @event.ShowDialog();
         }
 
-        private void btn_Admin_Click(object sender, EventArgs e)
+        private void btn_Economy_Click(object sender, EventArgs e)
         {
-            Administration administration = new Administration();
-            administration.ShowDialog();
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable table = new DataTable();
+            string queryString = $"select id_user, is_admin from register WHERE id_user = {_userId}";  // запрашиваем данные о пользователе с id = _userId
+            SqlCommand command = new SqlCommand(queryString, dataBase.GetConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            var user = new checkUser(table.Rows[0].ItemArray[1].ToString(), Convert.ToBoolean(table.Rows[0].ItemArray[1]));
+            Economy.Economy countries = new Economy.Economy(user);
+            countries.ShowDialog();
+        }
+
+        private void btn_EventsIn10Years_Click(object sender, EventArgs e)
+        {
+            QueryEventsIn10Years queryEventsIn10Years = new QueryEventsIn10Years();
+            queryEventsIn10Years.ShowDialog();
+        }
+
+        private void btn_CurrencyEurDkk_Click(object sender, EventArgs e)
+        {
+            QueryCurrencyEurDkk queryCurrency = new QueryCurrencyEurDkk();
+            queryCurrency.ShowDialog();
+        }
+
+        private void btn_Profit_Click(object sender, EventArgs e)
+        {
+            QueryProfit queryProfit = new QueryProfit();
+            queryProfit.ShowDialog();
+        }
+
+        private void btn_NobEvents_Click(object sender, EventArgs e)
+        {
+            QueryNonEvents queryNonEvents = new QueryNonEvents();
+            queryNonEvents.ShowDialog();
         }
     }
 }

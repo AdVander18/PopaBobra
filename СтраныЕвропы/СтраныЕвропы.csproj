@@ -84,6 +84,12 @@
     <Compile Include="Economy\Economy.Designer.cs">
       <DependentUpon>Economy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Economy\EconomyInCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Economy\EconomyInCountry.Designer.cs">
+      <DependentUpon>EconomyInCountry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Events\AddEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     </Compile>
     <Compile Include="Events\Event.Designer.cs">
       <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\EventsInCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events\EventsInCountry.Designer.cs">
+      <DependentUpon>EventsInCountry.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -109,6 +121,30 @@
     </Compile>
     <Compile Include="Authorisation\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\QueryCurrencyEurDkk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\QueryCurrencyEurDkk.Designer.cs">
+      <DependentUpon>QueryCurrencyEurDkk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\QueryEventsIn10Years.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\QueryEventsIn10Years.Designer.cs">
+      <DependentUpon>QueryEventsIn10Years.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\QueryNonEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\QueryNonEvents.Designer.cs">
+      <DependentUpon>QueryNonEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\QueryProfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\QueryProfit.Designer.cs">
+      <DependentUpon>QueryProfit.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Administration.resx">
       <DependentUpon>Administration.cs</DependentUpon>
@@ -148,6 +184,18 @@
     </Compile>
     <EmbeddedResource Include="Authorisation\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\QueryCurrencyEurDkk.resx">
+      <DependentUpon>QueryCurrencyEurDkk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\QueryEventsIn10Years.resx">
+      <DependentUpon>QueryEventsIn10Years.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\QueryNonEvents.resx">
+      <DependentUpon>QueryNonEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\QueryProfit.resx">
+      <DependentUpon>QueryProfit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
