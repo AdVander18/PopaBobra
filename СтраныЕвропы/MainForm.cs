@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Reflection.Emit;
 using System.Windows.Forms;
+using СтраныЕвропы.Economy;
 using СтраныЕвропы.Events;
 using СтраныЕвропы.Queries;
 
@@ -86,7 +87,7 @@ namespace СтраныЕвропы
             adapter.Fill(table);
             var user = new checkUser(table.Rows[0].ItemArray[1].ToString(), Convert.ToBoolean(table.Rows[0].ItemArray[1]));
             Countries countries = new Countries(user);
-            countries.ShowDialog();
+            countries.Show();
         }
 
         private void btn_Admin_Click(object sender, EventArgs e)
@@ -143,6 +144,18 @@ namespace СтраныЕвропы
         {
             QueryNonEvents queryNonEvents = new QueryNonEvents();
             queryNonEvents.ShowDialog();
+        }
+
+        private void btn_EconomyInCountries_Click(object sender, EventArgs e)
+        {
+            EconomyInCountry economyInCountry = new EconomyInCountry();
+            economyInCountry.Show();
+        }
+
+        private void btn_EventsInCountries_Click(object sender, EventArgs e)
+        {
+            EventsInCountry eventsInCountry = new EventsInCountry();
+            eventsInCountry.Show();
         }
     }
 }

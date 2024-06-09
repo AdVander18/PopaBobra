@@ -93,6 +93,7 @@
             this.btn_EventsInCountries.TabIndex = 4;
             this.btn_EventsInCountries.Text = "События в странах";
             this.btn_EventsInCountries.UseVisualStyleBackColor = true;
+            this.btn_EventsInCountries.Click += new System.EventHandler(this.btn_EventsInCountries_Click);
             // 
             // btn_EconomyInCountries
             // 
@@ -103,6 +104,7 @@
             this.btn_EconomyInCountries.TabIndex = 5;
             this.btn_EconomyInCountries.Text = "Экономика в странах";
             this.btn_EconomyInCountries.UseVisualStyleBackColor = true;
+            this.btn_EconomyInCountries.Click += new System.EventHandler(this.btn_EconomyInCountries_Click);
             // 
             // btn_Admin
             // 

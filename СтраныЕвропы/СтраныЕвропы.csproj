@@ -164,11 +164,17 @@
     <EmbeddedResource Include="Economy\Economy.resx">
       <DependentUpon>Economy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Economy\EconomyInCountry.resx">
+      <DependentUpon>EconomyInCountry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Events\AddEvent.resx">
       <DependentUpon>AddEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Events\Event.resx">
       <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events\EventsInCountry.resx">
+      <DependentUpon>EventsInCountry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
