@@ -168,6 +168,7 @@
             this.Name = "AddEconomy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddEconomy";
+            this.Load += new System.EventHandler(this.AddEconomy_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

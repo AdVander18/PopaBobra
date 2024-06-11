@@ -296,5 +296,11 @@ namespace СтраныЕвропы.Economy
             IsAdmin();
             // объявить доступность панели и метки при загрузке формы
         }
+
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            CountryEconomy countryEconomy = new CountryEconomy();
+            countryEconomy.ShowDialog();
+        }
     }
 }

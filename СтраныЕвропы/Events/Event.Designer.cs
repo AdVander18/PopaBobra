@@ -54,6 +54,7 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.btn_New = new System.Windows.Forms.Button();
+            this.btn_Report = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -280,7 +281,7 @@
             this.panel2.Controls.Add(this.btn_New);
             this.panel2.Location = new System.Drawing.Point(654, 338);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(141, 137);
+            this.panel2.Size = new System.Drawing.Size(141, 95);
             this.panel2.TabIndex = 38;
             // 
             // btn_Save
@@ -316,11 +317,22 @@
             this.btn_New.UseVisualStyleBackColor = true;
             this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
+            // btn_Report
+            // 
+            this.btn_Report.Location = new System.Drawing.Point(654, 432);
+            this.btn_Report.Name = "btn_Report";
+            this.btn_Report.Size = new System.Drawing.Size(141, 23);
+            this.btn_Report.TabIndex = 40;
+            this.btn_Report.Text = "Отчёт";
+            this.btn_Report.UseVisualStyleBackColor = true;
+            this.btn_Report.Click += new System.EventHandler(this.btn_Report_Click);
+            // 
             // Event
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 553);
+            this.Controls.Add(this.btn_Report);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
@@ -374,5 +386,6 @@
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_New;
+        private System.Windows.Forms.Button btn_Report;
     }
 }

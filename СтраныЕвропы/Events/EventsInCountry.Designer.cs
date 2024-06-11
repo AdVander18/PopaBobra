@@ -82,6 +82,7 @@
             this.Controls.Add(this.tb_EC);
             this.Name = "EventsInCountry";
             this.Text = "EventsInCountry";
+            this.Load += new System.EventHandler(this.EventsInCountry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

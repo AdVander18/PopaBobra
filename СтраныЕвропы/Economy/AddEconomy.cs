@@ -42,5 +42,10 @@ namespace СтраныЕвропы.Economy
                 MessageBox.Show(ex.Message, "Непредвиденная ошибка!");
             }
         }
+
+        private void AddEconomy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

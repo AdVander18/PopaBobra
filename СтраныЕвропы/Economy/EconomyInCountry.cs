@@ -22,7 +22,6 @@ namespace СтраныЕвропы.Economy
 
         private void EconomyInCountry_Load(object sender, EventArgs e)
         {
-            
 
         }
 

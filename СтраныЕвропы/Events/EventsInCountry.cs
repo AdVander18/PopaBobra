@@ -61,5 +61,10 @@ namespace СтраныЕвропы.Events
                 db.closeConnection();
             }
         }
+
+        private void EventsInCountry_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
