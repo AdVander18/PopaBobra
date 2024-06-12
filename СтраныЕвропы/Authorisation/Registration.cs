@@ -122,13 +122,44 @@ namespace СтраныЕвропы
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Image image = Image.FromFile(openFileDialog.FileName);
+
+                // Установка максимальных размеров
+                int maxWidth = 800; // например, 800 пикселей
+                int maxHeight = 800; // например, 800 пикселей
+
+                Image resizedImage = ResizeImage(image, maxWidth, maxHeight);
+
                 using (MemoryStream ms = new MemoryStream())
                 {
-                    image.Save(ms, image.RawFormat);
+                    resizedImage.Save(ms, image.RawFormat);
                     userImage = ms.ToArray();
                 }
             }
+        }
 
+        private Image ResizeImage(Image image, int maxWidth, int maxHeight)
+        {
+            int newWidth = image.Width;
+            int newHeight = image.Height;
+
+            // Проверяем, нужно ли изменять размер
+            if (image.Width > maxWidth || image.Height > maxHeight)
+            {
+                double ratioX = (double)maxWidth / image.Width;
+                double ratioY = (double)maxHeight / image.Height;
+                double ratio = Math.Min(ratioX, ratioY);
+
+                newWidth = (int)(image.Width * ratio);
+                newHeight = (int)(image.Height * ratio);
+            }
+
+            var newImage = new Bitmap(newWidth, newHeight);
+            using (var graphics = Graphics.FromImage(newImage))
+            {
+                graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+            }
+
+            return newImage;
         }
     }
 }
