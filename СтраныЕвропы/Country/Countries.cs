@@ -268,7 +268,6 @@ namespace СтраныЕвропы
             selectedRow = e.RowIndex;
             if (e.RowIndex >= 0)
             {
-                // Заполняем поля ввода текста значениями из выбранной строки DataGridView
                  DataGridViewRow row = dataGridView1.Rows[selectedRow];
                  tb_Id.Text = row.Cells[0].Value.ToString();
                  tb_Surname.Text = row.Cells[1].Value.ToString();

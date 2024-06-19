@@ -146,16 +146,28 @@ namespace СтраныЕвропы
             queryNonEvents.ShowDialog();
         }
 
-        private void btn_EconomyInCountries_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            EconomyInCountry economyInCountry = new EconomyInCountry();
-            economyInCountry.Show();
+            _10Years _10Years = new _10Years();
+            _10Years.ShowDialog();
         }
 
-        private void btn_EventsInCountries_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            EventsInCountry eventsInCountry = new EventsInCountry();
-            eventsInCountry.Show();
+            CurrensyEur currensyEur = new CurrensyEur();
+            currensyEur.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Profit profit = new Profit();
+            profit.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            NonEvents nonEvents = new NonEvents();
+            nonEvents.ShowDialog();
         }
     }
 }

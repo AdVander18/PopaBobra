@@ -56,7 +56,6 @@
             this.lb_Write = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_Report = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -337,22 +336,11 @@
             this.dataGridView1.TabIndex = 31;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // btn_Report
-            // 
-            this.btn_Report.Location = new System.Drawing.Point(654, 432);
-            this.btn_Report.Name = "btn_Report";
-            this.btn_Report.Size = new System.Drawing.Size(141, 23);
-            this.btn_Report.TabIndex = 35;
-            this.btn_Report.Text = "Отчёт";
-            this.btn_Report.UseVisualStyleBackColor = true;
-            this.btn_Report.Click += new System.EventHandler(this.btn_Report_Click);
-            // 
             // Economy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 553);
-            this.Controls.Add(this.btn_Report);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.tabControl1);
@@ -407,6 +395,5 @@
         private System.Windows.Forms.Label lb_Write;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_Report;
     }
 }

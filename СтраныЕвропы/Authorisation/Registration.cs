@@ -123,9 +123,8 @@ namespace СтраныЕвропы
             {
                 Image image = Image.FromFile(openFileDialog.FileName);
 
-                // Установка максимальных размеров
-                int maxWidth = 800; // например, 800 пикселей
-                int maxHeight = 800; // например, 800 пикселей
+                int maxWidth = 800;
+                int maxHeight = 800;
 
                 Image resizedImage = ResizeImage(image, maxWidth, maxHeight);
 
@@ -142,7 +141,6 @@ namespace СтраныЕвропы
             int newWidth = image.Width;
             int newHeight = image.Height;
 
-            // Проверяем, нужно ли изменять размер
             if (image.Width > maxWidth || image.Height > maxHeight)
             {
                 double ratioX = (double)maxWidth / image.Width;

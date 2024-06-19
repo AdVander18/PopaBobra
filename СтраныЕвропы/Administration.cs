@@ -11,8 +11,8 @@ namespace СтраныЕвропы
         {
             InitializeComponent();
         }
-        DataBase dataBase = new DataBase(); //создание объекта класса базы данных
-        int selectedRow; // какая строка выбрана в данный момент в DataGridView   
+        DataBase dataBase = new DataBase();
+        int selectedRow;
 
         private void CreateColumns()
         {
@@ -29,14 +29,13 @@ namespace СтраныЕвропы
 
             for (int i = 0; i < record.FieldCount; i++)
             {
-                // Проверяем, является ли значение null
                 if (!record.IsDBNull(i))
                 {
                     values[i] = record.GetValue(i);
                 }
                 else
                 {
-                    values[i] = "N/A"; // Или любое другое значение по умолчанию
+                    values[i] = "N/A";
                 }
             }
 
@@ -45,10 +44,9 @@ namespace СтраныЕвропы
 
         private void RefreshDataGrid(DataGridView dgw)
         {
-            // блок try/catch для отлавливания исключений при работе с базой данных
             try
             {
-                dgw.Rows.Clear(); // очистка всех строк
+                dgw.Rows.Clear();
 
                 string queryString = $"Select * from register";
                 SqlCommand command = new SqlCommand(queryString, dataBase.GetConnection());
@@ -60,11 +58,11 @@ namespace СтраныЕвропы
                 }
                 reader.Close();
             }
-            catch (SqlException ex) // ловим исключение, если оно возникло
+            catch (SqlException ex)
             {
                 MessageBox.Show("Возникла ошибка при работе с базой данных: " + ex.Message);
             }
-            finally // в любом случае закрываем соединение с базой данных
+            finally
             {
                 dataBase.closeConnection();
             }
@@ -94,7 +92,6 @@ namespace СтраныЕвропы
                     }
                     catch (SqlException ex)
                     {
-                        // обработка исключения
                         MessageBox.Show("Возникла ошибка: " + ex.Message);
                     }
                     finally

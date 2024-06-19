@@ -23,30 +23,14 @@ namespace СтраныЕвропы.Queries
         private void QueryProfit_Load(object sender, EventArgs e)
         {
             DataBase db = new DataBase();
-
-            // открыть соединение
             db.openConnection();
-
-            // Создается команда SQL
             SqlCommand selectCommand = new SqlCommand("SELECT Название_страны, ((Доход_на_душу * 100.0) / ВНП) as Процент FROM Страна C INNER JOIN Экономика E ON C.Код_страны = E.Код_страны", db.GetConnection());
-
-            // Выполняется команда
             SqlDataReader reader = selectCommand.ExecuteReader();
-
-            // Создаем новую таблицу DataTable.
             DataTable dt = new DataTable();
-
-            // Заполняем DataTable данными из DataReader
             dt.Load(reader);
-
-            // Настройка DataGridView для отображения данных из DataTable.
             dataGridView1.DataSource = dt;
-
             reader.Close();
-
-            // закрыть соединение
             db.closeConnection();
-
         }
     }
 }

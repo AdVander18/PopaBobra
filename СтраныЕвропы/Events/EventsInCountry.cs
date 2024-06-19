@@ -23,32 +23,17 @@ namespace СтраныЕвропы.Events
         private void button1_Click(object sender, EventArgs e)
         {
             DataBase db = new DataBase();
-
-            // Открываем соединение
             db.openConnection();
-
             SqlCommand command = new SqlCommand("GetEventsByCountry", db.GetConnection());
             command.CommandType = CommandType.StoredProcedure;
-
-            // Добавляем параметр @CountryName
             command.Parameters.AddWithValue("@CountryName", tb_EC.Text);
-
             SqlDataReader reader;
-
             try
             {
                 reader = command.ExecuteReader();
-
-                // Создам новую таблицу DataTable.
                 DataTable dt = new DataTable();
-
-                // Заполняем DataTable данными из DataReader
                 dt.Load(reader);
-
-                // Настраиваем DataGridView, чтобы он отображал данные из DataTable.
                 dataGridView1.DataSource = dt;
-
-                // Опционально: Расширяем столбцы для отображения в DataGridView
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
             catch (Exception ex)
@@ -57,7 +42,6 @@ namespace СтраныЕвропы.Events
             }
             finally
             {
-                // Закрываем соединение
                 db.closeConnection();
             }
         }

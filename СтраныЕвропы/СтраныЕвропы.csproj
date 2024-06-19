@@ -202,12 +202,6 @@
     <Compile Include="Economy\AddEconomy.Designer.cs">
       <DependentUpon>AddEconomy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Economy\CountryEconomy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Economy\CountryEconomy.Designer.cs">
-      <DependentUpon>CountryEconomy.cs</DependentUpon>
-    </Compile>
     <Compile Include="Economy\Economy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,12 +219,6 @@
     </Compile>
     <Compile Include="Events\AddEvent.Designer.cs">
       <DependentUpon>AddEvent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Events\CountryEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Events\CountryEvent.Designer.cs">
-      <DependentUpon>CountryEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="Events\Event.cs">
       <SubType>Form</SubType>
@@ -257,6 +245,30 @@
     </Compile>
     <Compile Include="Authorisation\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\10Years.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\10Years.Designer.cs">
+      <DependentUpon>10Years.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\CurrensyEur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\CurrensyEur.Designer.cs">
+      <DependentUpon>CurrensyEur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\NonEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\NonEvents.Designer.cs">
+      <DependentUpon>NonEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\Profit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries\Profit.Designer.cs">
+      <DependentUpon>Profit.cs</DependentUpon>
     </Compile>
     <Compile Include="Queries\QueryCurrencyEurDkk.cs">
       <SubType>Form</SubType>
@@ -293,17 +305,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>СтраныЕвропыDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="СтраныЕвропыDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>СтраныЕвропыDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="СтраныЕвропыDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>СтраныЕвропыDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="СтраныЕвропыDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>СтраныЕвропыDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="СтраныЕвропыDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>СтраныЕвропыDataSet5.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Administration.resx">
       <DependentUpon>Administration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Authorisation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Economy\CountryEconomy.rdlc" />
-    <EmbeddedResource Include="Economy\CountryEconomy.resx">
-      <DependentUpon>CountryEconomy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Events\CountryEvent.rdlc" />
     <EmbeddedResource Include="Country\AddCountries.resx">
       <DependentUpon>AddCountries.cs</DependentUpon>
     </EmbeddedResource>
@@ -321,9 +348,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Events\AddEvent.resx">
       <DependentUpon>AddEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Events\CountryEvent.resx">
-      <DependentUpon>CountryEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Events\Event.resx">
       <DependentUpon>Event.cs</DependentUpon>
@@ -346,6 +370,22 @@
     <EmbeddedResource Include="Authorisation\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Queries\10Years.resx">
+      <DependentUpon>10Years.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\CurrensyEur.resx">
+      <DependentUpon>CurrensyEur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\CurrensyEurDkkReport.rdlc" />
+    <EmbeddedResource Include="Queries\EventsIn10YearsReport.rdlc" />
+    <EmbeddedResource Include="Queries\NonEvents.resx">
+      <DependentUpon>NonEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\NonEventsReport.rdlc" />
+    <EmbeddedResource Include="Queries\Profit.resx">
+      <DependentUpon>Profit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\ProfitReport.rdlc" />
     <EmbeddedResource Include="Queries\QueryCurrencyEurDkk.resx">
       <DependentUpon>QueryCurrencyEurDkk.cs</DependentUpon>
     </EmbeddedResource>
@@ -390,6 +430,50 @@
     </None>
     <None Include="СтраныЕвропыDataSet1.xss">
       <DependentUpon>СтраныЕвропыDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet2.xsc">
+      <DependentUpon>СтраныЕвропыDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>СтраныЕвропыDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="СтраныЕвропыDataSet2.xss">
+      <DependentUpon>СтраныЕвропыDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet3.xsc">
+      <DependentUpon>СтраныЕвропыDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>СтраныЕвропыDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="СтраныЕвропыDataSet3.xss">
+      <DependentUpon>СтраныЕвропыDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet4.xsc">
+      <DependentUpon>СтраныЕвропыDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>СтраныЕвропыDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="СтраныЕвропыDataSet4.xss">
+      <DependentUpon>СтраныЕвропыDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet5.xsc">
+      <DependentUpon>СтраныЕвропыDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="СтраныЕвропыDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>СтраныЕвропыDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="СтраныЕвропыDataSet5.xss">
+      <DependentUpon>СтраныЕвропыDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

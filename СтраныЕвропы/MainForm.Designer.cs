@@ -32,13 +32,15 @@
             this.btn_Countries = new System.Windows.Forms.Button();
             this.btn_Events = new System.Windows.Forms.Button();
             this.btn_Economy = new System.Windows.Forms.Button();
-            this.btn_EventsInCountries = new System.Windows.Forms.Button();
-            this.btn_EconomyInCountries = new System.Windows.Forms.Button();
             this.btn_Admin = new System.Windows.Forms.Button();
             this.btn_EventsIn10Years = new System.Windows.Forms.Button();
             this.btn_CurrencyEurDkk = new System.Windows.Forms.Button();
             this.btn_Profit = new System.Windows.Forms.Button();
             this.btn_NobEvents = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,32 +86,10 @@
             this.btn_Economy.UseVisualStyleBackColor = true;
             this.btn_Economy.Click += new System.EventHandler(this.btn_Economy_Click);
             // 
-            // btn_EventsInCountries
-            // 
-            this.btn_EventsInCountries.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_EventsInCountries.Location = new System.Drawing.Point(13, 303);
-            this.btn_EventsInCountries.Name = "btn_EventsInCountries";
-            this.btn_EventsInCountries.Size = new System.Drawing.Size(775, 91);
-            this.btn_EventsInCountries.TabIndex = 4;
-            this.btn_EventsInCountries.Text = "События в странах";
-            this.btn_EventsInCountries.UseVisualStyleBackColor = true;
-            this.btn_EventsInCountries.Click += new System.EventHandler(this.btn_EventsInCountries_Click);
-            // 
-            // btn_EconomyInCountries
-            // 
-            this.btn_EconomyInCountries.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_EconomyInCountries.Location = new System.Drawing.Point(13, 400);
-            this.btn_EconomyInCountries.Name = "btn_EconomyInCountries";
-            this.btn_EconomyInCountries.Size = new System.Drawing.Size(775, 91);
-            this.btn_EconomyInCountries.TabIndex = 5;
-            this.btn_EconomyInCountries.Text = "Экономика в странах";
-            this.btn_EconomyInCountries.UseVisualStyleBackColor = true;
-            this.btn_EconomyInCountries.Click += new System.EventHandler(this.btn_EconomyInCountries_Click);
-            // 
             // btn_Admin
             // 
             this.btn_Admin.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Admin.Location = new System.Drawing.Point(0, 876);
+            this.btn_Admin.Location = new System.Drawing.Point(0, 1070);
             this.btn_Admin.Name = "btn_Admin";
             this.btn_Admin.Size = new System.Drawing.Size(788, 23);
             this.btn_Admin.TabIndex = 6;
@@ -120,7 +100,7 @@
             // btn_EventsIn10Years
             // 
             this.btn_EventsIn10Years.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_EventsIn10Years.Location = new System.Drawing.Point(13, 497);
+            this.btn_EventsIn10Years.Location = new System.Drawing.Point(12, 303);
             this.btn_EventsIn10Years.Name = "btn_EventsIn10Years";
             this.btn_EventsIn10Years.Size = new System.Drawing.Size(775, 91);
             this.btn_EventsIn10Years.TabIndex = 7;
@@ -131,7 +111,7 @@
             // btn_CurrencyEurDkk
             // 
             this.btn_CurrencyEurDkk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_CurrencyEurDkk.Location = new System.Drawing.Point(13, 594);
+            this.btn_CurrencyEurDkk.Location = new System.Drawing.Point(12, 400);
             this.btn_CurrencyEurDkk.Name = "btn_CurrencyEurDkk";
             this.btn_CurrencyEurDkk.Size = new System.Drawing.Size(775, 91);
             this.btn_CurrencyEurDkk.TabIndex = 8;
@@ -142,7 +122,7 @@
             // btn_Profit
             // 
             this.btn_Profit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_Profit.Location = new System.Drawing.Point(13, 688);
+            this.btn_Profit.Location = new System.Drawing.Point(12, 494);
             this.btn_Profit.Name = "btn_Profit";
             this.btn_Profit.Size = new System.Drawing.Size(775, 91);
             this.btn_Profit.TabIndex = 9;
@@ -153,7 +133,7 @@
             // btn_NobEvents
             // 
             this.btn_NobEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_NobEvents.Location = new System.Drawing.Point(13, 785);
+            this.btn_NobEvents.Location = new System.Drawing.Point(12, 591);
             this.btn_NobEvents.Name = "btn_NobEvents";
             this.btn_NobEvents.Size = new System.Drawing.Size(775, 91);
             this.btn_NobEvents.TabIndex = 10;
@@ -161,19 +141,65 @@
             this.btn_NobEvents.UseVisualStyleBackColor = true;
             this.btn_NobEvents.Click += new System.EventHandler(this.btn_NobEvents_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(12, 688);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(775, 91);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "События за 10 лет(отчёт)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(12, 785);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(775, 91);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Валюты(отчёт)";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(12, 882);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(775, 91);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "ВНП(отчёт)";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(12, 979);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(775, 91);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Нет исторического события(отчёт)";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_NobEvents);
             this.Controls.Add(this.btn_Profit);
             this.Controls.Add(this.btn_CurrencyEurDkk);
             this.Controls.Add(this.btn_EventsIn10Years);
             this.Controls.Add(this.btn_Admin);
-            this.Controls.Add(this.btn_EconomyInCountries);
-            this.Controls.Add(this.btn_EventsInCountries);
             this.Controls.Add(this.btn_Economy);
             this.Controls.Add(this.btn_Events);
             this.Controls.Add(this.btn_Countries);
@@ -194,12 +220,14 @@
         private System.Windows.Forms.Button btn_Countries;
         private System.Windows.Forms.Button btn_Events;
         private System.Windows.Forms.Button btn_Economy;
-        private System.Windows.Forms.Button btn_EventsInCountries;
-        private System.Windows.Forms.Button btn_EconomyInCountries;
         private System.Windows.Forms.Button btn_Admin;
         private System.Windows.Forms.Button btn_EventsIn10Years;
         private System.Windows.Forms.Button btn_CurrencyEurDkk;
         private System.Windows.Forms.Button btn_Profit;
         private System.Windows.Forms.Button btn_NobEvents;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

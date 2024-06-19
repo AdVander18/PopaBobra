@@ -251,7 +251,6 @@ namespace СтраныЕвропы.Economy
             selectedRow = e.RowIndex;
             if (e.RowIndex >= 0)
             {
-                // Заполняем поля ввода текста значениями из выбранной строки DataGridView
                 DataGridViewRow row = dataGridView1.Rows[selectedRow];
                 tb_Id.Text = row.Cells[0].Value.ToString();
                 tb_Surname.Text = row.Cells[1].Value.ToString();
@@ -297,10 +296,5 @@ namespace СтраныЕвропы.Economy
             // объявить доступность панели и метки при загрузке формы
         }
 
-        private void btn_Report_Click(object sender, EventArgs e)
-        {
-            CountryEconomy countryEconomy = new CountryEconomy();
-            countryEconomy.ShowDialog();
-        }
     }
 }

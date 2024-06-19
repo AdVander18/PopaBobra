@@ -1,6 +1,6 @@
-﻿namespace СтраныЕвропы.Economy
+﻿namespace СтраныЕвропы.Queries
 {
-    partial class CountryEconomy
+    partial class _10Years
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,22 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "СтраныЕвропы.Queries.EventsIn10YearsReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(535, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(630, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // CountryEconomy
+            // _10Years
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 450);
+            this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "CountryEconomy";
-            this.Text = "CountryEconomy";
-            this.Load += new System.EventHandler(this.CountryEconomy_Load);
+            this.Name = "_10Years";
+            this.Text = "EventsIn10Years";
+            this.Load += new System.EventHandler(this._10Years_Load);
             this.ResumeLayout(false);
 
         }
